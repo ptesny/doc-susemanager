@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Home Overview :: SUSE Manager Documentation</title>
     <link rel="canonical" href="https://opensource.suse.com/doc-susemanager/suse-manager/reference/home/home-overview.html">
-    <meta name="generator" content="Antora 2.0.0">
+    <meta name="generator" content="Antora 2.2.0">
     <link rel="stylesheet" href="../../../_/css/site.css">
    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" integrity="sha256-piqEf7Ap7CMps8krDQsSOTZgF+MU/0MPyPW2enj5I40=" crossorigin="anonymous" /> -->
 <link rel="stylesheet" href="../../../_/css/search.css">
@@ -42,19 +42,19 @@
                   <div class="navbar-link">Resources</div>
                   <div class="navbar-dropdown">
                       <!--  <div class="navbar-item"><strong>Resources</strong></div> -->
-                      <a class="navbar-item" href="https://github.com/uyuni-project/uyuni-docs"><i
-                              class="fab fa-github"></i>&nbsp;Code Repository</a>
-                      <a class="navbar-item" href="https://github.com/uyuni-project/uyuni-docs/issues"><i
-                              class="fab fa-github"></i>&nbsp;Report an Issue</a>
+                      <a class="navbar-item" href="https://github.com/SUSE/doc-susemanager"><i
+                              class="fab fa-github"></i>&nbsp;doc-susemanager</a>
+                      <a class="navbar-item" href="https://github.com/SUSE/doc-susemanager/issues"><i
+                              class="fab fa-github"></i>&nbsp;Report Issue</a>
                       <a class="navbar-item"
-                         href="https://github.com/uyuni-project/uyuni-docs/wiki#contributing"><i
+                         href="https://github.com/SUSE/doc-susemanager/wiki#contributing"><i
                               class="fas fa-user-edit"></i>&nbsp;Contributing</a>
                   </div>
               </div>
 
           </div>
       </div>
-      <a id="twitter-link" class="navbar-item" href="https://twitter.com/susemanager?lang=en">
+      <a id="twitter-link" class="navbar-item" href="https://twitter.com/susemanager">
           <span class="icon">
             <svg aria-hidden="true" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg"
                  viewBox="0 0 512 512">
@@ -150,7 +150,13 @@
     <a class="nav-link" href="../../installation/proxy-setup.html">Proxy Setup</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../installation/webui-setup.html">Web Interface Setup</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../installation/pubcloud-setup.html">Public Cloud Setup</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../installation/setup-wizard.html">Setup Wizard</a>
   </li>
 </ul>
   </li>
@@ -194,6 +200,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../client-configuration/registration-bootstrap.html">Register with Bootstrap</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../client-configuration/registration-cli.html">Register on the Command Line</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../client-configuration/clients-and-activation-keys.html">Activation Keys</a>
@@ -249,6 +258,9 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../client-configuration/clients-ubuntu.html">Ubuntu Clients</a>
   </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../client-configuration/clients-opensuse.html">openSUSE Clients</a>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
@@ -291,7 +303,7 @@
     <a class="nav-link" href="../../client-configuration/channels.html">Channels</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../client-configuration/creating-a-tools-repository.html">Creating a Tools Repository</a>
+    <a class="nav-link" href="../../client-configuration/bootstrap-repository.html">Bootstrap Repository</a>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
@@ -365,45 +377,15 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../intro.html">Reference Manual</a>
+    <span class="nav-text">Reference Guide</span>
 <ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../intro.html">Introduction</a>
+  </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
     <span class="nav-text">WebUI Reference</span>
 <ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../navigation/navigation-menu.html">Navigation</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../navigation/top-bar.html">Top Bar</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../navigation/left-navigation-bar.html">Left Navigation Bar</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../navigation/categories-and-pages.html">Categories</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../navigation/tabs-subtabs.html">Tabs and Subtabs</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../navigation/patch-alert-icons.html">Patch Alert Icons</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../navigation/notification-messages-icon.html">Notification Messages Icon</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../navigation/navigation-search.html">Search</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../navigation/systems-selected.html">Systems Selected</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../navigation/navigation-lists.html">Navigation Lists</a>
-  </li>
-</ul>
-  </li>
   <li class="nav-item" data-depth="3">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="home-menu.html">Home</a>
@@ -745,9 +727,6 @@
     <a class="nav-link" href="../audit/audit-menu.html">Audit</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../audit/system-details-audit.html">System Details Audit</a>
-  </li>
-  <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../audit/audit-cve-audit.html">CVE Audit</a>
   </li>
   <li class="nav-item" data-depth="4">
@@ -815,6 +794,9 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../schedule/pending-actions.html">Pending Actions</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../schedule/recurring-actions.html">Recurring Actions</a>
   </li>
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../schedule/completed-actions.html">Completed Actions</a>
@@ -1047,6 +1029,9 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../administration/subscription-matching.html">Subscription Matching</a>
+  </li>
+  <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../../administration/live-patching.html">Live Patching</a>
 <ul class="nav-list">
@@ -1065,10 +1050,22 @@
     <a class="nav-link" href="../../administration/monitoring.html">Monitoring</a>
   </li>
   <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../administration/organizations.html">Organizations</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../administration/content-staging.html">Content Staging</a>
+  </li>
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../../administration/disconnected-setup.html">Disconnected Setup</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../../administration/iss.html">Inter-Server Synchronization</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../administration/task-schedules.html">Task Schedules</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../administration/recurring-actions.html">Recurring Actions</a>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
@@ -1083,13 +1080,28 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../administration/mirror-sources.html">Mirror Sources</a>
   </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../administration/openscap.html">OpenSCAP</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../administration/auditing.html">Auditing Packages</a>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../../administration/auth-methods.html">Authentication Methods</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../administration/custom-ssl.html">Custom SSL Certificates</a>
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../administration/ssl-certs.html">SSL Certificates</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../administration/ssl-certs-selfsigned.html">Self-Signed SSL Certificates</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../administration/ssl-certs-imported.html">Imported SSL Certificates</a>
+  </li>
+</ul>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../../administration/backup-restore.html">Backing Up and Restoring</a>
@@ -1159,6 +1171,9 @@
     <a class="nav-link" href="../../administration/tshoot-saltboot.html">Troubleshooting Saltboot</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../administration/tshoot-sync.html">Troubleshooting Product Synchronization</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../administration/tshoot-taskomatic.html">Troubleshooting Taskomatic</a>
   </li>
 </ul>
@@ -1190,6 +1205,9 @@
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../../salt/salt-file-locations.html">File Locations</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../salt/yomi.html">Install Using Yomi</a>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
@@ -1316,13 +1334,13 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../retail/retail-migration-slepostosuma.html">Migrate SLEPOS to SUMA</a>
   </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../retail/retail-upgrade-branchserver.html">Upgrade Branch Server</a>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../../retail/retail-next.html">What Next?</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../retail/common_gfdl1.2_i.html">License</a>
   </li>
 </ul>
   </li>
@@ -1358,7 +1376,7 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../../index.html">SUSE Manager</a></li>
-    <li><a href="../intro.html">Reference Manual</a></li>
+    <li>Reference Guide</li>
     <li>WebUI Reference</li>
     <li><a href="home-menu.html">Home</a></li>
     <li><a href="home-overview.html">Overview</a></li>
@@ -1376,125 +1394,17 @@
       <a href="home-notification-messages.html">
         <i class="fas fa-arrow-right custom-color" data-tippy="Next Page" id="nextPage"></i></a></span>
     &nbsp;
-    <a href="https://github.com/uyuni-project/uyuni-docs/issues"><i class="fas fa-bug custom-color" data-tippy="Create an Issue" id="createIssue"></i>&nbsp;</a>
-  <a href="https://github.com/uyuni-project/uyuni-docs/edit/manager-4.0.4/modules/reference/pages/home/home-overview.adoc"><i class="fas fa-edit custom-color" data-tippy="Edit this page and submit a pull request" id="submitPR"></i></a>
+    <a href="https://github.com/SUSE/doc-susemanager/issues"><i class="fas fa-bug custom-color" data-tippy="Create an Issue" id="createIssue"></i>&nbsp;</a>
+  <a href="https://github.com/uyuni-project/uyuni-docs/edit/master/modules/reference/pages/home/home-overview.adoc"><i class="fas fa-edit custom-color" data-tippy="Edit this page and submit a pull request" id="submitPR"></i></a>
 </div>
 </div>
 <article class="doc"><a name="section-top"></a>
 <h1 class="page">Home Overview</h1>
 <div class="paragraph">
-<p>This topic introduces you to the SUSE Manager Web UI.</p>
+<p>The <span class="menuseq"><b class="menu">Home</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Overview</b></span> section is a dashboard that contains a summary of your current SUSE Manager status, including tasks, client information, and critical security updates.</p>
 </div>
 <div class="paragraph">
-<p>Entering the SUSE Manager URL in a browser leads you to the <code class="guimenu">Sign In</code> screen.</p>
-</div>
-<div class="paragraph">
-<p>Before logging in, select <code class="guimenu">About</code>, to browse and search for available documentation topics.
-You may reset your username and password from the <span class="menuseq"><b class="menu">About</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Lookup Login/Password</b></span> page.
-Refer to <a href="user-account-my-account.html" class="page">My Account</a> for more information.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>New to the SUSE Manager Web UI? Scan through <a href="../navigation/navigation-menu.html" class="page">Web UI Navigation</a> to familiarize yourself with the layout and symbols used throughout this document.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>Login to the SUSE Manager Web UI to view the <span class="menuseq"><b class="menu">Main Menu</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="submenu">Home</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Overview</b></span> page.
-The Overview page contains summary panes that provide important information about your systems.</p>
-</div>
-<div class="paragraph">
-<p><code class="guimenu">Overview</code> is split into functional sections, with the most critical sections displayed first.
-Users can control which of the following sections are displayed by making selections on the <span class="menuseq"><b class="menu">Main Menu</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="submenu">Home</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">My Preferences</b></span> page.
-Refer to <a href="home-my-preferences.html" class="page">My Preferences</a> for more information.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../_images/home_overview.png" alt="home overview">
-</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>The <code class="guimenu">Tasks</code> pane lists the most common tasks an administrator performs via the Web interface.
-Click any link to reach the page within SUSE Manager that allows you to accomplish that task.</p>
-<div class="imageblock">
-<div class="content">
-<img src="../_images/home_overview_tasks_pane.png" alt="home overview tasks pane">
-</div>
-</div>
-</li>
-<li>
-<p>The <code class="guimenu">Inactive Systems</code> list provides a list of all systems that have stopped checking into SUSE Manager.</p>
-<div class="imageblock">
-<div class="content">
-<img src="../_images/home_overview_inactive_systems_pane.png" alt="home overview inactive systems pane">
-</div>
-</div>
-</li>
-<li>
-<p>The <code class="guimenu">Most Critical Systems</code> pane lists the most critical systems within your organization.
-It provides a link to quickly view those systems and displays a summary of the patch updates that have yet to be applied to those systems.
-Click the name of a system to see its <code class="guimenu">System Details</code> page and apply the patch updates.
-Below the list is a link to <code class="guimenu">View All Critical Systems</code> on one page.</p>
-<div class="imageblock">
-<div class="content">
-<img src="../_images/home_overview_critical_systems_pane.png" alt="home overview critical systems pane">
-</div>
-</div>
-</li>
-<li>
-<p>The <code class="guimenu">Recently Scheduled Actions</code> pane lists all actions less than thirty days old and their status: failed, completed, or pending.
-Click the label of any given action to view its details page.
-Below the list is a link to <code class="guimenu">View All Scheduled Actions</code> on one page, which lists all actions that have not yet been carried out on your client systems.</p>
-<div class="imageblock">
-<div class="content">
-<img src="../_images/home_overview_pending_actions_pane.png" alt="home overview pending actions pane">
-</div>
-</div>
-</li>
-<li>
-<p>The <code class="guimenu">Relevant Security Patches</code> pane lists all available security patches that have yet to be applied to some or all of your client systems.
-It is critical that you apply these security patches to keep your systems secure.
-Below this list find links to all available patches <code class="guimenu">View All Patches</code>.
-You may also view patches that only apply to your systems <code class="guimenu">View All Relevant Patches</code>.</p>
-<div class="imageblock">
-<div class="content">
-<img src="../_images/home_overview_latest_errata_pane.png" alt="home overview latest errata pane">
-</div>
-</div>
-</li>
-<li>
-<p>The <code class="guimenu">System Group Name</code> pane lists groups you may have created and indicates whether the systems in those groups are fully updated.
-Click the link below this section to get to the <span class="menuseq"><b class="menu">Main Menu</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="submenu">Systems</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">System Groups</b></span> page, where you can choose a <code class="guimenu">Group Name</code> to use with the System Set Manager.</p>
-<div class="imageblock">
-<div class="content">
-<img src="../_images/home_overview_system_groups_pane.png" alt="home overview system groups pane">
-</div>
-</div>
-</li>
-<li>
-<p>The <code class="guimenu">Recently Registered Systems</code> pane lists all systems added to SUSE Manager in the past 30 days.
-Select a system&#8217;s name to see its <code class="guimenu">System Details</code> page.
-At the bottom of the <code class="guimenu">Recently Registered Systems</code> pane select the <code class="guimenu">View All Recently Registered Systems</code> link to view all recently registered systems on one page.</p>
-<div class="imageblock">
-<div class="content">
-<img src="../_images/home_overview_recently_registered_pane.png" alt="home overview recently registered pane">
-</div>
-</div>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>To return to this page, select <span class="menuseq"><b class="menu">Main Menu</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="submenu">Home</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Overview</b></span> that is also known as <em>The Menu</em>.</p>
+<p>For more information about setting up and using the SUSE Manager Web UI, see <a href="../../installation/webui-setup.html" class="page">installation:webui-setup.adoc</a>.</p>
 </div>
 
 <div class="cedents grid" role="navigation">

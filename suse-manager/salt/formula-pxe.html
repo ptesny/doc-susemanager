@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>PXE Formula :: SUSE Manager Documentation</title>
     <link rel="canonical" href="https://opensource.suse.com/doc-susemanager/suse-manager/salt/formula-pxe.html">
-    <meta name="generator" content="Antora 2.0.0">
+    <meta name="generator" content="Antora 2.2.0">
     <link rel="stylesheet" href="../../_/css/site.css">
    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" integrity="sha256-piqEf7Ap7CMps8krDQsSOTZgF+MU/0MPyPW2enj5I40=" crossorigin="anonymous" /> -->
 <link rel="stylesheet" href="../../_/css/search.css">
@@ -42,19 +42,19 @@
                   <div class="navbar-link">Resources</div>
                   <div class="navbar-dropdown">
                       <!--  <div class="navbar-item"><strong>Resources</strong></div> -->
-                      <a class="navbar-item" href="https://github.com/uyuni-project/uyuni-docs"><i
-                              class="fab fa-github"></i>&nbsp;Code Repository</a>
-                      <a class="navbar-item" href="https://github.com/uyuni-project/uyuni-docs/issues"><i
-                              class="fab fa-github"></i>&nbsp;Report an Issue</a>
+                      <a class="navbar-item" href="https://github.com/SUSE/doc-susemanager"><i
+                              class="fab fa-github"></i>&nbsp;doc-susemanager</a>
+                      <a class="navbar-item" href="https://github.com/SUSE/doc-susemanager/issues"><i
+                              class="fab fa-github"></i>&nbsp;Report Issue</a>
                       <a class="navbar-item"
-                         href="https://github.com/uyuni-project/uyuni-docs/wiki#contributing"><i
+                         href="https://github.com/SUSE/doc-susemanager/wiki#contributing"><i
                               class="fas fa-user-edit"></i>&nbsp;Contributing</a>
                   </div>
               </div>
 
           </div>
       </div>
-      <a id="twitter-link" class="navbar-item" href="https://twitter.com/susemanager?lang=en">
+      <a id="twitter-link" class="navbar-item" href="https://twitter.com/susemanager">
           <span class="icon">
             <svg aria-hidden="true" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg"
                  viewBox="0 0 512 512">
@@ -150,7 +150,13 @@
     <a class="nav-link" href="../installation/proxy-setup.html">Proxy Setup</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../installation/webui-setup.html">Web Interface Setup</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../installation/pubcloud-setup.html">Public Cloud Setup</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../installation/setup-wizard.html">Setup Wizard</a>
   </li>
 </ul>
   </li>
@@ -194,6 +200,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../client-configuration/registration-bootstrap.html">Register with Bootstrap</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../client-configuration/registration-cli.html">Register on the Command Line</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../client-configuration/clients-and-activation-keys.html">Activation Keys</a>
@@ -249,6 +258,9 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../client-configuration/clients-ubuntu.html">Ubuntu Clients</a>
   </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../client-configuration/clients-opensuse.html">openSUSE Clients</a>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
@@ -291,7 +303,7 @@
     <a class="nav-link" href="../client-configuration/channels.html">Channels</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../client-configuration/creating-a-tools-repository.html">Creating a Tools Repository</a>
+    <a class="nav-link" href="../client-configuration/bootstrap-repository.html">Bootstrap Repository</a>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
@@ -365,45 +377,15 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../reference/intro.html">Reference Manual</a>
+    <span class="nav-text">Reference Guide</span>
 <ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../reference/intro.html">Introduction</a>
+  </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
     <span class="nav-text">WebUI Reference</span>
 <ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../reference/navigation/navigation-menu.html">Navigation</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/navigation/top-bar.html">Top Bar</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/navigation/left-navigation-bar.html">Left Navigation Bar</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/navigation/categories-and-pages.html">Categories</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/navigation/tabs-subtabs.html">Tabs and Subtabs</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/navigation/patch-alert-icons.html">Patch Alert Icons</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/navigation/notification-messages-icon.html">Notification Messages Icon</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/navigation/navigation-search.html">Search</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/navigation/systems-selected.html">Systems Selected</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/navigation/navigation-lists.html">Navigation Lists</a>
-  </li>
-</ul>
-  </li>
   <li class="nav-item" data-depth="3">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/home/home-menu.html">Home</a>
@@ -745,9 +727,6 @@
     <a class="nav-link" href="../reference/audit/audit-menu.html">Audit</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/audit/system-details-audit.html">System Details Audit</a>
-  </li>
-  <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../reference/audit/audit-cve-audit.html">CVE Audit</a>
   </li>
   <li class="nav-item" data-depth="4">
@@ -815,6 +794,9 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../reference/schedule/pending-actions.html">Pending Actions</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../reference/schedule/recurring-actions.html">Recurring Actions</a>
   </li>
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../reference/schedule/completed-actions.html">Completed Actions</a>
@@ -1047,6 +1029,9 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../administration/subscription-matching.html">Subscription Matching</a>
+  </li>
+  <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../administration/live-patching.html">Live Patching</a>
 <ul class="nav-list">
@@ -1065,10 +1050,22 @@
     <a class="nav-link" href="../administration/monitoring.html">Monitoring</a>
   </li>
   <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../administration/organizations.html">Organizations</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../administration/content-staging.html">Content Staging</a>
+  </li>
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../administration/disconnected-setup.html">Disconnected Setup</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../administration/iss.html">Inter-Server Synchronization</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../administration/task-schedules.html">Task Schedules</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../administration/recurring-actions.html">Recurring Actions</a>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
@@ -1083,13 +1080,28 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../administration/mirror-sources.html">Mirror Sources</a>
   </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../administration/openscap.html">OpenSCAP</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../administration/auditing.html">Auditing Packages</a>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../administration/auth-methods.html">Authentication Methods</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../administration/custom-ssl.html">Custom SSL Certificates</a>
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../administration/ssl-certs.html">SSL Certificates</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../administration/ssl-certs-selfsigned.html">Self-Signed SSL Certificates</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../administration/ssl-certs-imported.html">Imported SSL Certificates</a>
+  </li>
+</ul>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../administration/backup-restore.html">Backing Up and Restoring</a>
@@ -1159,6 +1171,9 @@
     <a class="nav-link" href="../administration/tshoot-saltboot.html">Troubleshooting Saltboot</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../administration/tshoot-sync.html">Troubleshooting Product Synchronization</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../administration/tshoot-taskomatic.html">Troubleshooting Taskomatic</a>
   </li>
 </ul>
@@ -1190,6 +1205,9 @@
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="salt-file-locations.html">File Locations</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="yomi.html">Install Using Yomi</a>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
@@ -1316,13 +1334,13 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../retail/retail-migration-slepostosuma.html">Migrate SLEPOS to SUMA</a>
   </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../retail/retail-upgrade-branchserver.html">Upgrade Branch Server</a>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../retail/retail-next.html">What Next?</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../retail/common_gfdl1.2_i.html">License</a>
   </li>
 </ul>
   </li>
@@ -1375,8 +1393,8 @@
       <a href="formula-saltboot.html">
         <i class="fas fa-arrow-right custom-color" data-tippy="Next Page" id="nextPage"></i></a></span>
     &nbsp;
-    <a href="https://github.com/uyuni-project/uyuni-docs/issues"><i class="fas fa-bug custom-color" data-tippy="Create an Issue" id="createIssue"></i>&nbsp;</a>
-  <a href="https://github.com/uyuni-project/uyuni-docs/edit/manager-4.0.4/modules/salt/pages/formula-pxe.adoc"><i class="fas fa-edit custom-color" data-tippy="Edit this page and submit a pull request" id="submitPR"></i></a>
+    <a href="https://github.com/SUSE/doc-susemanager/issues"><i class="fas fa-bug custom-color" data-tippy="Create an Issue" id="createIssue"></i>&nbsp;</a>
+  <a href="https://github.com/uyuni-project/uyuni-docs/edit/master/modules/salt/pages/formula-pxe.adoc"><i class="fas fa-edit custom-color" data-tippy="Edit this page and submit a pull request" id="submitPR"></i></a>
 </div>
 </div>
 <article class="doc"><a name="section-top"></a>
@@ -1411,10 +1429,6 @@ For more information about possible values, see <a href="#retail.sect.formulas.p
 </li>
 <li>
 <p>In the <code class="guimenu">PXE root directory</code> field, enter the path to the saltboot directory (for example, <code class="systemitem">/srv/saltboot</code>).</p>
-</li>
-<li>
-<p>In the <code class="guimenu">Branch id</code> field, type a name to use as a branch identifier (for example: <code class="systemitem">Branch0001</code>).
-Use only alphanumeric characters for the branch identifier.</p>
 </li>
 </ul>
 </div>
@@ -1502,7 +1516,7 @@ Otherwise there is a risk of terminal minion ID duplicity, and bootstrapping the
 <dl>
 <dt class="hdlist1"><code class="systemitem">MINION_ID_PREFIX</code></dt>
 <dd>
-<p>Branch ID set in the PXE formula form.</p>
+<p>Branch ID set in the Branch Network formula form.</p>
 </dd>
 <dt class="hdlist1"><code class="systemitem">salt_device</code></dt>
 <dd>

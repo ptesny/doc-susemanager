@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>All Scans :: SUSE Manager Documentation</title>
     <link rel="canonical" href="https://opensource.suse.com/doc-susemanager/suse-manager/reference/audit/openscap-all-scans.html">
-    <meta name="generator" content="Antora 2.0.0">
+    <meta name="generator" content="Antora 2.2.0">
     <link rel="stylesheet" href="../../../_/css/site.css">
    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" integrity="sha256-piqEf7Ap7CMps8krDQsSOTZgF+MU/0MPyPW2enj5I40=" crossorigin="anonymous" /> -->
 <link rel="stylesheet" href="../../../_/css/search.css">
@@ -42,19 +42,19 @@
                   <div class="navbar-link">Resources</div>
                   <div class="navbar-dropdown">
                       <!--  <div class="navbar-item"><strong>Resources</strong></div> -->
-                      <a class="navbar-item" href="https://github.com/uyuni-project/uyuni-docs"><i
-                              class="fab fa-github"></i>&nbsp;Code Repository</a>
-                      <a class="navbar-item" href="https://github.com/uyuni-project/uyuni-docs/issues"><i
-                              class="fab fa-github"></i>&nbsp;Report an Issue</a>
+                      <a class="navbar-item" href="https://github.com/SUSE/doc-susemanager"><i
+                              class="fab fa-github"></i>&nbsp;doc-susemanager</a>
+                      <a class="navbar-item" href="https://github.com/SUSE/doc-susemanager/issues"><i
+                              class="fab fa-github"></i>&nbsp;Report Issue</a>
                       <a class="navbar-item"
-                         href="https://github.com/uyuni-project/uyuni-docs/wiki#contributing"><i
+                         href="https://github.com/SUSE/doc-susemanager/wiki#contributing"><i
                               class="fas fa-user-edit"></i>&nbsp;Contributing</a>
                   </div>
               </div>
 
           </div>
       </div>
-      <a id="twitter-link" class="navbar-item" href="https://twitter.com/susemanager?lang=en">
+      <a id="twitter-link" class="navbar-item" href="https://twitter.com/susemanager">
           <span class="icon">
             <svg aria-hidden="true" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg"
                  viewBox="0 0 512 512">
@@ -150,7 +150,13 @@
     <a class="nav-link" href="../../installation/proxy-setup.html">Proxy Setup</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../installation/webui-setup.html">Web Interface Setup</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../installation/pubcloud-setup.html">Public Cloud Setup</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../installation/setup-wizard.html">Setup Wizard</a>
   </li>
 </ul>
   </li>
@@ -194,6 +200,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../client-configuration/registration-bootstrap.html">Register with Bootstrap</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../client-configuration/registration-cli.html">Register on the Command Line</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../client-configuration/clients-and-activation-keys.html">Activation Keys</a>
@@ -249,6 +258,9 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../client-configuration/clients-ubuntu.html">Ubuntu Clients</a>
   </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../client-configuration/clients-opensuse.html">openSUSE Clients</a>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
@@ -291,7 +303,7 @@
     <a class="nav-link" href="../../client-configuration/channels.html">Channels</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../client-configuration/creating-a-tools-repository.html">Creating a Tools Repository</a>
+    <a class="nav-link" href="../../client-configuration/bootstrap-repository.html">Bootstrap Repository</a>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
@@ -365,45 +377,15 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../intro.html">Reference Manual</a>
+    <span class="nav-text">Reference Guide</span>
 <ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../intro.html">Introduction</a>
+  </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
     <span class="nav-text">WebUI Reference</span>
 <ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../navigation/navigation-menu.html">Navigation</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../navigation/top-bar.html">Top Bar</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../navigation/left-navigation-bar.html">Left Navigation Bar</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../navigation/categories-and-pages.html">Categories</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../navigation/tabs-subtabs.html">Tabs and Subtabs</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../navigation/patch-alert-icons.html">Patch Alert Icons</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../navigation/notification-messages-icon.html">Notification Messages Icon</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../navigation/navigation-search.html">Search</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../navigation/systems-selected.html">Systems Selected</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../navigation/navigation-lists.html">Navigation Lists</a>
-  </li>
-</ul>
-  </li>
   <li class="nav-item" data-depth="3">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../home/home-menu.html">Home</a>
@@ -745,9 +727,6 @@
     <a class="nav-link" href="audit-menu.html">Audit</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="system-details-audit.html">System Details Audit</a>
-  </li>
-  <li class="nav-item" data-depth="4">
     <a class="nav-link" href="audit-cve-audit.html">CVE Audit</a>
   </li>
   <li class="nav-item" data-depth="4">
@@ -815,6 +794,9 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../schedule/pending-actions.html">Pending Actions</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../schedule/recurring-actions.html">Recurring Actions</a>
   </li>
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../schedule/completed-actions.html">Completed Actions</a>
@@ -1047,6 +1029,9 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../administration/subscription-matching.html">Subscription Matching</a>
+  </li>
+  <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../../administration/live-patching.html">Live Patching</a>
 <ul class="nav-list">
@@ -1065,10 +1050,22 @@
     <a class="nav-link" href="../../administration/monitoring.html">Monitoring</a>
   </li>
   <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../administration/organizations.html">Organizations</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../administration/content-staging.html">Content Staging</a>
+  </li>
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../../administration/disconnected-setup.html">Disconnected Setup</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../../administration/iss.html">Inter-Server Synchronization</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../administration/task-schedules.html">Task Schedules</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../administration/recurring-actions.html">Recurring Actions</a>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
@@ -1083,13 +1080,28 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../administration/mirror-sources.html">Mirror Sources</a>
   </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../administration/openscap.html">OpenSCAP</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../administration/auditing.html">Auditing Packages</a>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../../administration/auth-methods.html">Authentication Methods</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../administration/custom-ssl.html">Custom SSL Certificates</a>
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../administration/ssl-certs.html">SSL Certificates</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../administration/ssl-certs-selfsigned.html">Self-Signed SSL Certificates</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../administration/ssl-certs-imported.html">Imported SSL Certificates</a>
+  </li>
+</ul>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../../administration/backup-restore.html">Backing Up and Restoring</a>
@@ -1159,6 +1171,9 @@
     <a class="nav-link" href="../../administration/tshoot-saltboot.html">Troubleshooting Saltboot</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../administration/tshoot-sync.html">Troubleshooting Product Synchronization</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../administration/tshoot-taskomatic.html">Troubleshooting Taskomatic</a>
   </li>
 </ul>
@@ -1190,6 +1205,9 @@
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../../salt/salt-file-locations.html">File Locations</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../salt/yomi.html">Install Using Yomi</a>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
@@ -1316,13 +1334,13 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../../retail/retail-migration-slepostosuma.html">Migrate SLEPOS to SUMA</a>
   </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../retail/retail-upgrade-branchserver.html">Upgrade Branch Server</a>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../../retail/retail-next.html">What Next?</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../../retail/common_gfdl1.2_i.html">License</a>
   </li>
 </ul>
   </li>
@@ -1358,7 +1376,7 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../../index.html">SUSE Manager</a></li>
-    <li><a href="../intro.html">Reference Manual</a></li>
+    <li>Reference Guide</li>
     <li>WebUI Reference</li>
     <li><a href="audit-menu.html">Audit</a></li>
     <li><a href="openscap-menu.html">OpenSCAP</a></li>
@@ -1377,93 +1395,78 @@
       <a href="openscap-xccdf-diff.html">
         <i class="fas fa-arrow-right custom-color" data-tippy="Next Page" id="nextPage"></i></a></span>
     &nbsp;
-    <a href="https://github.com/uyuni-project/uyuni-docs/issues"><i class="fas fa-bug custom-color" data-tippy="Create an Issue" id="createIssue"></i>&nbsp;</a>
-  <a href="https://github.com/uyuni-project/uyuni-docs/edit/manager-4.0.4/modules/reference/pages/audit/openscap-all-scans.adoc"><i class="fas fa-edit custom-color" data-tippy="Edit this page and submit a pull request" id="submitPR"></i></a>
+    <a href="https://github.com/SUSE/doc-susemanager/issues"><i class="fas fa-bug custom-color" data-tippy="Create an Issue" id="createIssue"></i>&nbsp;</a>
+  <a href="https://github.com/uyuni-project/uyuni-docs/edit/master/modules/reference/pages/audit/openscap-all-scans.adoc"><i class="fas fa-edit custom-color" data-tippy="Edit this page and submit a pull request" id="submitPR"></i></a>
 </div>
 </div>
 <article class="doc"><a name="section-top"></a>
 <h1 class="page">All Scans</h1>
-<div id="preamble">
-<div class="sectionbody">
 <div class="paragraph">
-<p>If you click <span class="menuseq"><b class="menu">Main Menu</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="submenu">Audit</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="submenu">OpenSCAP</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">All Scans</b></span>, an overview of the OpenSCAP Scans appears.
-SCAP (Security Content Automation Protocol) is a framework to maintain the security of enterprise systems.
-It mainly performs the following tasks:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Automatically verifying the availability of patches</p>
-</li>
-<li>
-<p>Checking system security configuration settings</p>
-</li>
-<li>
-<p>Examining systems for signs of compromise</p>
-</li>
-</ul>
+<p>The <span class="menuseq"><b class="menu">Audit</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">OpenSCAP</b></span> section displays the results of OpenSCAP scans that you have performed on your clients.</p>
 </div>
 <div class="paragraph">
-<p>For a description of the Web UI dialogs, see:
-<a href="audit-openscap-overview.html" class="page">OpenSCAP SUSE Manager Web Interface</a></p>
+<p>￼The Security Certification and Authorization Package (SCAP) is a standardized compliance checking solution for enterprise-level Linux infrastructures.</p>
+</div>
+<table id="openscap-scan-details" class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Bootstrap Script Options</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Evaluation Results</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">System</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The name of the scanned client.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">XCCDF Profile</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The evaluated profile.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Completed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The time that the scan was completed.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Satisfied</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The total number of rules that have been satisfied.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A rule is satisfied if the result of the evaluation is <code>Pass</code> or <code>Fixed</code>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dissatisfied</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The total number of rules that are not satisfied.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A rule is dissatisfied if the result of the evaluation is <code>Fail</code>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unknown</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The total number of rules that were not able to be evaluated.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A rule is unknown if the result of the evaluation is <code>Error</code>, <code>Unknown</code> or <code>Not checked</code>.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>[IMPORTANT</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>Rules can also return other results, including <code>Informational</code>, <code>Not Applicable</code>, or <code>Not Selected</code>.
+Rules that return these results are not shown in the scan results.</p>
+</div>
+</div>
 </div>
 <div class="paragraph">
-<p>For instructions and tips on how to best use OpenSCAP with SUSE Manager, refer to: <a href="audit-openscap-overview.html#ch-openscap" class="page">System Security via OpenSCAP</a>
-To learn more about OpenSCAP, see the project home page at <a href="http://open-scap.org" class="bare">http://open-scap.org</a>.</p>
-</div>
-<div class="paragraph">
-<p><span class="menuseq"><b class="menu">All Scans</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">]
- is the default page that appears on the menu:Audit[OpenSCAP</b></span>
- page.
-Here you see all the completed OpenSCAP scans you have permission to view.
-Permissions for scans are derived from system permissions.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_all_scans_legend"><a class="anchor" href="#_all_scans_legend"></a><a class="link" href="#_all_scans_legend">All Scans Legend</a></h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>For each scan, the following information is displayed:</p>
-</div>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">System</dt>
-<dd>
-<p>the scanned system.</p>
-</dd>
-<dt class="hdlist1">XCCDF Profile</dt>
-<dd>
-<p>the evaluated profile.</p>
-</dd>
-<dt class="hdlist1">Completed</dt>
-<dd>
-<p>time of completion.</p>
-</dd>
-<dt class="hdlist1">Satisfied</dt>
-<dd>
-<p>number of rules satisfied.
-A rule is considered to be satisfied if the result of the evaluation is either Pass or Fixed.</p>
-</dd>
-<dt class="hdlist1">Dissatisfied</dt>
-<dd>
-<p>number of rules that were not satisfied.
-A rule is considered Dissatisfied if the result of the evaluation is a Fail.</p>
-</dd>
-<dt class="hdlist1">Unknown</dt>
-<dd>
-<p>number of rules which failed to evaluate.
-A rule is considered to be Unknown if the result of the evaluation is an Error, Unknown or Not Checked.</p>
-</dd>
-</dl>
-</div>
-<div class="paragraph">
-<p>The evaluation of XCCDF rules may also return status results like <code>Informational</code>, <code>Not Applicable</code>, or not <code>Selected</code>.
-In such cases, the given rule is not included in the statistics on this page.
-See <span class="menuseq"><b class="menu">System Details</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Audit</b></span>
- for information on these types of results.</p>
-</div>
-</div>
+<p>For more information about OpenSCAP, see <a href="../../administration/openscap.html" class="page">administration:openscap.adoc</a>.</p>
 </div>
 
 <div class="cedents grid" role="navigation">

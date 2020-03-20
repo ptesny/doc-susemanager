@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>SUSE Manager Proxy Setup :: SUSE Manager Documentation</title>
     <link rel="canonical" href="https://opensource.suse.com/doc-susemanager/suse-manager/installation/proxy-setup.html">
-    <meta name="generator" content="Antora 2.0.0">
+    <meta name="generator" content="Antora 2.2.0">
     <link rel="stylesheet" href="../../_/css/site.css">
    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" integrity="sha256-piqEf7Ap7CMps8krDQsSOTZgF+MU/0MPyPW2enj5I40=" crossorigin="anonymous" /> -->
 <link rel="stylesheet" href="../../_/css/search.css">
@@ -42,19 +42,19 @@
                   <div class="navbar-link">Resources</div>
                   <div class="navbar-dropdown">
                       <!--  <div class="navbar-item"><strong>Resources</strong></div> -->
-                      <a class="navbar-item" href="https://github.com/uyuni-project/uyuni-docs"><i
-                              class="fab fa-github"></i>&nbsp;Code Repository</a>
-                      <a class="navbar-item" href="https://github.com/uyuni-project/uyuni-docs/issues"><i
-                              class="fab fa-github"></i>&nbsp;Report an Issue</a>
+                      <a class="navbar-item" href="https://github.com/SUSE/doc-susemanager"><i
+                              class="fab fa-github"></i>&nbsp;doc-susemanager</a>
+                      <a class="navbar-item" href="https://github.com/SUSE/doc-susemanager/issues"><i
+                              class="fab fa-github"></i>&nbsp;Report Issue</a>
                       <a class="navbar-item"
-                         href="https://github.com/uyuni-project/uyuni-docs/wiki#contributing"><i
+                         href="https://github.com/SUSE/doc-susemanager/wiki#contributing"><i
                               class="fas fa-user-edit"></i>&nbsp;Contributing</a>
                   </div>
               </div>
 
           </div>
       </div>
-      <a id="twitter-link" class="navbar-item" href="https://twitter.com/susemanager?lang=en">
+      <a id="twitter-link" class="navbar-item" href="https://twitter.com/susemanager">
           <span class="icon">
             <svg aria-hidden="true" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg"
                  viewBox="0 0 512 512">
@@ -150,7 +150,13 @@
     <a class="nav-link" href="proxy-setup.html">Proxy Setup</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="webui-setup.html">Web Interface Setup</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="pubcloud-setup.html">Public Cloud Setup</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="setup-wizard.html">Setup Wizard</a>
   </li>
 </ul>
   </li>
@@ -194,6 +200,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../client-configuration/registration-bootstrap.html">Register with Bootstrap</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../client-configuration/registration-cli.html">Register on the Command Line</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../client-configuration/clients-and-activation-keys.html">Activation Keys</a>
@@ -249,6 +258,9 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../client-configuration/clients-ubuntu.html">Ubuntu Clients</a>
   </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../client-configuration/clients-opensuse.html">openSUSE Clients</a>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
@@ -291,7 +303,7 @@
     <a class="nav-link" href="../client-configuration/channels.html">Channels</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../client-configuration/creating-a-tools-repository.html">Creating a Tools Repository</a>
+    <a class="nav-link" href="../client-configuration/bootstrap-repository.html">Bootstrap Repository</a>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
@@ -365,45 +377,15 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../reference/intro.html">Reference Manual</a>
+    <span class="nav-text">Reference Guide</span>
 <ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../reference/intro.html">Introduction</a>
+  </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
     <span class="nav-text">WebUI Reference</span>
 <ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../reference/navigation/navigation-menu.html">Navigation</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/navigation/top-bar.html">Top Bar</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/navigation/left-navigation-bar.html">Left Navigation Bar</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/navigation/categories-and-pages.html">Categories</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/navigation/tabs-subtabs.html">Tabs and Subtabs</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/navigation/patch-alert-icons.html">Patch Alert Icons</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/navigation/notification-messages-icon.html">Notification Messages Icon</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/navigation/navigation-search.html">Search</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/navigation/systems-selected.html">Systems Selected</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/navigation/navigation-lists.html">Navigation Lists</a>
-  </li>
-</ul>
-  </li>
   <li class="nav-item" data-depth="3">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/home/home-menu.html">Home</a>
@@ -745,9 +727,6 @@
     <a class="nav-link" href="../reference/audit/audit-menu.html">Audit</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/audit/system-details-audit.html">System Details Audit</a>
-  </li>
-  <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../reference/audit/audit-cve-audit.html">CVE Audit</a>
   </li>
   <li class="nav-item" data-depth="4">
@@ -815,6 +794,9 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../reference/schedule/pending-actions.html">Pending Actions</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../reference/schedule/recurring-actions.html">Recurring Actions</a>
   </li>
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../reference/schedule/completed-actions.html">Completed Actions</a>
@@ -1047,6 +1029,9 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../administration/subscription-matching.html">Subscription Matching</a>
+  </li>
+  <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../administration/live-patching.html">Live Patching</a>
 <ul class="nav-list">
@@ -1065,10 +1050,22 @@
     <a class="nav-link" href="../administration/monitoring.html">Monitoring</a>
   </li>
   <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../administration/organizations.html">Organizations</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../administration/content-staging.html">Content Staging</a>
+  </li>
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../administration/disconnected-setup.html">Disconnected Setup</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../administration/iss.html">Inter-Server Synchronization</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../administration/task-schedules.html">Task Schedules</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../administration/recurring-actions.html">Recurring Actions</a>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
@@ -1083,13 +1080,28 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../administration/mirror-sources.html">Mirror Sources</a>
   </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../administration/openscap.html">OpenSCAP</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../administration/auditing.html">Auditing Packages</a>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../administration/auth-methods.html">Authentication Methods</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../administration/custom-ssl.html">Custom SSL Certificates</a>
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../administration/ssl-certs.html">SSL Certificates</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../administration/ssl-certs-selfsigned.html">Self-Signed SSL Certificates</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../administration/ssl-certs-imported.html">Imported SSL Certificates</a>
+  </li>
+</ul>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../administration/backup-restore.html">Backing Up and Restoring</a>
@@ -1159,6 +1171,9 @@
     <a class="nav-link" href="../administration/tshoot-saltboot.html">Troubleshooting Saltboot</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../administration/tshoot-sync.html">Troubleshooting Product Synchronization</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../administration/tshoot-taskomatic.html">Troubleshooting Taskomatic</a>
   </li>
 </ul>
@@ -1190,6 +1205,9 @@
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../salt/salt-file-locations.html">File Locations</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../salt/yomi.html">Install Using Yomi</a>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
@@ -1316,13 +1334,13 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../retail/retail-migration-slepostosuma.html">Migrate SLEPOS to SUMA</a>
   </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../retail/retail-upgrade-branchserver.html">Upgrade Branch Server</a>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../retail/retail-next.html">What Next?</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../retail/common_gfdl1.2_i.html">License</a>
   </li>
 </ul>
   </li>
@@ -1372,11 +1390,11 @@
         <i class="fas fa-arrow-left custom-color" data-tippy="Previous page" id="previousPage"></i></a></span>
 &nbsp;
 <span class="next-caret">
-      <a href="pubcloud-setup.html">
+      <a href="webui-setup.html">
         <i class="fas fa-arrow-right custom-color" data-tippy="Next Page" id="nextPage"></i></a></span>
     &nbsp;
-    <a href="https://github.com/uyuni-project/uyuni-docs/issues"><i class="fas fa-bug custom-color" data-tippy="Create an Issue" id="createIssue"></i>&nbsp;</a>
-  <a href="https://github.com/uyuni-project/uyuni-docs/edit/manager-4.0.4/modules/installation/pages/proxy-setup.adoc"><i class="fas fa-edit custom-color" data-tippy="Edit this page and submit a pull request" id="submitPR"></i></a>
+    <a href="https://github.com/SUSE/doc-susemanager/issues"><i class="fas fa-bug custom-color" data-tippy="Create an Issue" id="createIssue"></i>&nbsp;</a>
+  <a href="https://github.com/uyuni-project/uyuni-docs/edit/master/modules/installation/pages/proxy-setup.adoc"><i class="fas fa-edit custom-color" data-tippy="Edit this page and submit a pull request" id="submitPR"></i></a>
 </div>
 </div>
 <article class="doc"><a name="section-top"></a>
@@ -1448,10 +1466,10 @@ Using certificates signed by different CAs for proxies and server is not support
 <h2 id="at.manager.proxy.run.confproxy"><a class="anchor" href="#at.manager.proxy.run.confproxy"></a><a class="link" href="#at.manager.proxy.run.confproxy">Run <code class="command">configure-proxy.sh</code></a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The <code class="command">configure-proxy.sh</code> script will finalize the setup of your SUSE Manager Proxy.</p>
+<p>The <code class="command">configure-proxy.sh</code> script finalizes the setup of your SUSE Manager Proxy.</p>
 </div>
 <div class="paragraph">
-<p>Now execute the interactive <code class="command">configure-proxy.sh</code> script.
+<p>Execute the interactive <code class="command">configure-proxy.sh</code> script.
 Pressing <kbd>Enter</kbd> without further input will make the script use the default values provided between brackets <code>[]</code>.
 Here is some information about the requested settings:</p>
 </div>
@@ -1465,10 +1483,6 @@ Here is some information about the requested settings:</p>
 <dd>
 <p>A HTTP proxy enables your SUSE Manager proxy to access the Web.
 This is needed if direct access to the Web is prohibited by a firewall.</p>
-</dd>
-<dt class="hdlist1">Proxy Version to Activate</dt>
-<dd>
-<p>Normally, the correct value (3.0, 3.1, 3.2, or 4.0) should be offered as a default.</p>
 </dd>
 <dt class="hdlist1">Traceback Email</dt>
 <dd>
@@ -1568,7 +1582,7 @@ If you receive an HTTP error during script execution, run the script again.</p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>On the SUSE Manager Proxy install <span class="package">susemanager-tftpsync-recv</span>:</p>
+<p>On the SUSE Manager Proxy, install the <code class="package">susemanager-tftpsync-recv</code> package:</p>
 <div class="listingblock">
 <div class="content">
 <pre>zypper in susemanager-tftpsync-recv</pre>
@@ -1583,8 +1597,8 @@ If you receive an HTTP error during script execution, run the script again.</p>
 </div>
 </div>
 <div class="paragraph">
-<p>It asks for hostname and IP address of the SUSE Manager Server and of the proxy itself.
-Additionally, it asks for the tftpboot directory on the proxy.</p>
+<p>You need to provide the hostname and IP address of the SUSE Manager Server and the proxy.
+You also need to enter the path to the tftpboot directory on the proxy.</p>
 </div>
 </li>
 <li>
@@ -1600,7 +1614,8 @@ Additionally, it asks for the tftpboot directory on the proxy.</p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>On the SUSE Manager Server, run <code class="command">configure-tftpsync.sh</code> to configure the upload to the SUSE Manager Proxy:</p>
+<p>On the SUSE Manager Server, run <code class="command">configure-tftpsync.sh</code>.
+This creates the configuration, and uploads it to the SUSE Manager Proxy:</p>
 <div class="listingblock">
 <div class="content">
 <pre>configure-tftpsync.sh FQDN_of_Proxy</pre>
@@ -1608,7 +1623,7 @@ Additionally, it asks for the tftpboot directory on the proxy.</p>
 </div>
 </li>
 <li>
-<p>To start an initial synchronization on the SUSE Manager Server run:</p>
+<p>Start an initial synchronization on the SUSE Manager Server:</p>
 <div class="listingblock">
 <div class="content">
 <pre>cobbler sync</pre>
@@ -1626,13 +1641,14 @@ For more information about Cobbler, see <a href="../client-configuration/cobbler
 <div class="sect2">
 <h3 id="proxy.pxe.dhcp"><a class="anchor" href="#proxy.pxe.dhcp"></a><a class="link" href="#proxy.pxe.dhcp">Configure DHCP for PXE through SUSE Manager Proxy</a></h3>
 <div class="paragraph">
-<p>SUSE Manager is using Cobbler to provide provisioning.
+<p>SUSE Manager uses Cobbler for client provisioning.
 PXE (tftp) is installed and activated by default.
-To enable systems to find the PXE boot on the SUSE Manager Proxy add the following to the DHCP configuration for the zone containing the systems to be provisioned:</p>
+Clients must be able to find the PXE boot on the SUSE Manager Proxy using DHCP.
+Use this DHCP configuration for the zone that contains the clients to be provisioned:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>next-server: &lt;IP_Address_of_SUSE_Manager_Proxy&gt;
+<pre>next-server: &lt;IP_Address_of_Proxy&gt;
 filename: "pxelinux.0"</pre>
 </div>
 </div>
@@ -1640,51 +1656,68 @@ filename: "pxelinux.0"</pre>
 </div>
 </div>
 <div class="sect1">
-<h2 id="replacing.a.susemgrproxy"><a class="anchor" href="#replacing.a.susemgrproxy"></a><a class="link" href="#replacing.a.susemgrproxy">Replace a SUSE Manager Proxy</a></h2>
+<h2 id="replace-susemgrproxy"><a class="anchor" href="#replace-susemgrproxy"></a><a class="link" href="#replace-susemgrproxy">Replace a SUSE Manager Proxy</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>A SUSE Manager Proxy is dumb in that it does not contain any information about the clients that are connected to it.
-A SUSE Manager Proxy can therefore be replaced by a new one.
-Naturally, the replacement proxy must have the same name and IP address as its predecessor.</p>
+<p>A proxy does not contain any information about the clients that are connected to it.
+Therefore, a proxy can be replaced by a new one at any time.
+The replacement proxy must have the same name and IP address as its predecessor.</p>
 </div>
 <div class="paragraph">
-<p>In order to replace a SUSE Manager Proxy and keeping the clients registered to the proxy leave the old proxy in SUSE Manager.
+<p>Shut down the old proxy, but leave it installed while you prepare the replacement.
 Create a reactivation key for this system and then register the new proxy using the reactivation key.
-If you do not use the reactivation key, you will need to re-register all the clients against the new proxy.</p>
+If you do not use the reactivation key, you will need to re-register all the
+clients against the new proxy.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The reactivation key is only needed if you do not want to lose the history of the machine.
+If you do not use a reactivation key, the replacement proxy will become a "new" one with a new ID.</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 <div id="proxy.migration3.replace" class="olist arabic">
-<div class="title">Procedure: Replacing a SUSE Manager Proxy and Keeping the Clients Registered</div>
+<div class="title">Procedure: Replacing a Proxy and Keeping the Clients Registered</div>
 <ol class="arabic">
 <li>
 <p>Before starting the actual migration procedure, save the data from the old proxy, if needed.
-Consider copying important data to a central place that can also be accessed by the new proxy.</p>
+Consider copying important or manually created data to a central place that can also be accessed by the new proxy.</p>
 </li>
 <li>
 <p>Shut down the proxy.</p>
 </li>
 <li>
-<p>Install a new SUSE Manager Proxy&#160;4.0, following <a href="install-proxy-unified.html" class="page">Proxy Installation</a>.</p>
+<p>Install a new SUSE Manager Proxy.
+For installation instructions, see <a href="install-proxy-unified.html" class="page">Proxy Installation</a>.</p>
 </li>
 <li>
-<p>In the SUSE Manager Web UI select the newly installed SUSE Manager Proxy and delete it from the systems list.</p>
+<p>In the SUSE Manager Web UI, select the newly installed SUSE Manager Proxy, and delete it from the systems list.</p>
 </li>
 <li>
 <p>In the Web UI, create a reactivation key for the old proxy system: On the System Details tab of the old proxy click <code class="guimenu">Reactivation</code>.
-Then click <code class="guimenu">Generate New Key</code>, and remember it (write it on a piece of paper or copy it to the clipboard).
+Click <code class="guimenu">Generate New Key</code>, and make a note of the new key, as you will need it later.
 For more information about reactivation keys, see <a href="../reference/systems/system-details/sd-reactivation.html" class="page">Reactivation Keys</a>.</p>
 </li>
 <li>
-<p>After the installation of the new proxy, perform the following actions (if needed):</p>
+<p>OPTIONAL: After the installation of the new proxy, you might also need to:</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Copy the centrally saved data to the new proxy system.</p>
+<p>Copy the centrally saved data to the new proxy system</p>
 </li>
 <li>
-<p>Install any other needed software.</p>
+<p>Install any other needed software</p>
 </li>
 <li>
-<p>If the proxy is also used for autoinstallation, do not forget to setup TFTP synchronization.</p>
+<p>Set up TFTP synchronization if the proxy is used for autoinstallation</p>
 </li>
 </ul>
 </div>
@@ -1698,11 +1731,11 @@ For more information about reactivation keys, see <a href="../reference/systems/
 <i class="fa icon-important" title="Important"></i>
 </td>
 <td class="content">
-<div class="title">Proxy Installation and Client Connections</div>
 <div class="paragraph">
 <p>During the installation of the proxy, clients will not be able to reach the SUSE Manager Server.
-After a SUSE Manager Proxy system has been deleted from the systems list, all clients connected to this proxy will be (incorrectly) listed as <code>directly connected</code> to the SUSE Manager Server.
-After the first successful operation on a client <em>such as execution of a remote command or installation of a package or patch</em> this information will automatically be corrected.
+After you have a deleted a proxy, the systems list can be temporarily incorrect.
+All clients that were previously connected to the proxy will show as being directly connected to the server instead.
+After the first successful operation on a client, such as execution of a remote command or installation of a package or patch, this information will automatically be corrected.
 This may take some hours.</p>
 </div>
 </td>
@@ -1727,13 +1760,13 @@ This may take some hours.</p>
   </div>
 
   <div class="next">
-      <a href="pubcloud-setup.html" title="Public Cloud Setup">
+      <a href="webui-setup.html" title="Web Interface Setup">
         <div class="change-page">
           <div class="arrow-next"><i class="fas fa-arrow-right"></i></div>
         <span class="label">Next</span>
         <br/>
        <!-- <span class="label title"><strong>:</strong></span> -->
-        <span class="title">Public Cloud Setup</span>
+        <span class="title">Web Interface Setup</span>
         </div>
       </a>
   </div>

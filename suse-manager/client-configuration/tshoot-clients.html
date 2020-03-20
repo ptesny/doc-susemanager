@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Troubleshooting Clients :: SUSE Manager Documentation</title>
     <link rel="canonical" href="https://opensource.suse.com/doc-susemanager/suse-manager/client-configuration/tshoot-clients.html">
-    <meta name="generator" content="Antora 2.0.0">
+    <meta name="generator" content="Antora 2.2.0">
     <link rel="stylesheet" href="../../_/css/site.css">
    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" integrity="sha256-piqEf7Ap7CMps8krDQsSOTZgF+MU/0MPyPW2enj5I40=" crossorigin="anonymous" /> -->
 <link rel="stylesheet" href="../../_/css/search.css">
@@ -42,19 +42,19 @@
                   <div class="navbar-link">Resources</div>
                   <div class="navbar-dropdown">
                       <!--  <div class="navbar-item"><strong>Resources</strong></div> -->
-                      <a class="navbar-item" href="https://github.com/uyuni-project/uyuni-docs"><i
-                              class="fab fa-github"></i>&nbsp;Code Repository</a>
-                      <a class="navbar-item" href="https://github.com/uyuni-project/uyuni-docs/issues"><i
-                              class="fab fa-github"></i>&nbsp;Report an Issue</a>
+                      <a class="navbar-item" href="https://github.com/SUSE/doc-susemanager"><i
+                              class="fab fa-github"></i>&nbsp;doc-susemanager</a>
+                      <a class="navbar-item" href="https://github.com/SUSE/doc-susemanager/issues"><i
+                              class="fab fa-github"></i>&nbsp;Report Issue</a>
                       <a class="navbar-item"
-                         href="https://github.com/uyuni-project/uyuni-docs/wiki#contributing"><i
+                         href="https://github.com/SUSE/doc-susemanager/wiki#contributing"><i
                               class="fas fa-user-edit"></i>&nbsp;Contributing</a>
                   </div>
               </div>
 
           </div>
       </div>
-      <a id="twitter-link" class="navbar-item" href="https://twitter.com/susemanager?lang=en">
+      <a id="twitter-link" class="navbar-item" href="https://twitter.com/susemanager">
           <span class="icon">
             <svg aria-hidden="true" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg"
                  viewBox="0 0 512 512">
@@ -150,7 +150,13 @@
     <a class="nav-link" href="../installation/proxy-setup.html">Proxy Setup</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../installation/webui-setup.html">Web Interface Setup</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../installation/pubcloud-setup.html">Public Cloud Setup</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../installation/setup-wizard.html">Setup Wizard</a>
   </li>
 </ul>
   </li>
@@ -194,6 +200,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="registration-bootstrap.html">Register with Bootstrap</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="registration-cli.html">Register on the Command Line</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="clients-and-activation-keys.html">Activation Keys</a>
@@ -249,6 +258,9 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="clients-ubuntu.html">Ubuntu Clients</a>
   </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="clients-opensuse.html">openSUSE Clients</a>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
@@ -291,7 +303,7 @@
     <a class="nav-link" href="channels.html">Channels</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="creating-a-tools-repository.html">Creating a Tools Repository</a>
+    <a class="nav-link" href="bootstrap-repository.html">Bootstrap Repository</a>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
@@ -365,45 +377,15 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../reference/intro.html">Reference Manual</a>
+    <span class="nav-text">Reference Guide</span>
 <ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../reference/intro.html">Introduction</a>
+  </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
     <span class="nav-text">WebUI Reference</span>
 <ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../reference/navigation/navigation-menu.html">Navigation</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/navigation/top-bar.html">Top Bar</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/navigation/left-navigation-bar.html">Left Navigation Bar</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/navigation/categories-and-pages.html">Categories</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/navigation/tabs-subtabs.html">Tabs and Subtabs</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/navigation/patch-alert-icons.html">Patch Alert Icons</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/navigation/notification-messages-icon.html">Notification Messages Icon</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/navigation/navigation-search.html">Search</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/navigation/systems-selected.html">Systems Selected</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/navigation/navigation-lists.html">Navigation Lists</a>
-  </li>
-</ul>
-  </li>
   <li class="nav-item" data-depth="3">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/home/home-menu.html">Home</a>
@@ -745,9 +727,6 @@
     <a class="nav-link" href="../reference/audit/audit-menu.html">Audit</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/audit/system-details-audit.html">System Details Audit</a>
-  </li>
-  <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../reference/audit/audit-cve-audit.html">CVE Audit</a>
   </li>
   <li class="nav-item" data-depth="4">
@@ -815,6 +794,9 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../reference/schedule/pending-actions.html">Pending Actions</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../reference/schedule/recurring-actions.html">Recurring Actions</a>
   </li>
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../reference/schedule/completed-actions.html">Completed Actions</a>
@@ -1047,6 +1029,9 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../administration/subscription-matching.html">Subscription Matching</a>
+  </li>
+  <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../administration/live-patching.html">Live Patching</a>
 <ul class="nav-list">
@@ -1065,10 +1050,22 @@
     <a class="nav-link" href="../administration/monitoring.html">Monitoring</a>
   </li>
   <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../administration/organizations.html">Organizations</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../administration/content-staging.html">Content Staging</a>
+  </li>
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../administration/disconnected-setup.html">Disconnected Setup</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../administration/iss.html">Inter-Server Synchronization</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../administration/task-schedules.html">Task Schedules</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../administration/recurring-actions.html">Recurring Actions</a>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
@@ -1083,13 +1080,28 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../administration/mirror-sources.html">Mirror Sources</a>
   </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../administration/openscap.html">OpenSCAP</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../administration/auditing.html">Auditing Packages</a>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../administration/auth-methods.html">Authentication Methods</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../administration/custom-ssl.html">Custom SSL Certificates</a>
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../administration/ssl-certs.html">SSL Certificates</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../administration/ssl-certs-selfsigned.html">Self-Signed SSL Certificates</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../administration/ssl-certs-imported.html">Imported SSL Certificates</a>
+  </li>
+</ul>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../administration/backup-restore.html">Backing Up and Restoring</a>
@@ -1159,6 +1171,9 @@
     <a class="nav-link" href="../administration/tshoot-saltboot.html">Troubleshooting Saltboot</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../administration/tshoot-sync.html">Troubleshooting Product Synchronization</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../administration/tshoot-taskomatic.html">Troubleshooting Taskomatic</a>
   </li>
 </ul>
@@ -1190,6 +1205,9 @@
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../salt/salt-file-locations.html">File Locations</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../salt/yomi.html">Install Using Yomi</a>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
@@ -1316,13 +1334,13 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../retail/retail-migration-slepostosuma.html">Migrate SLEPOS to SUMA</a>
   </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../retail/retail-upgrade-branchserver.html">Upgrade Branch Server</a>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../retail/retail-next.html">What Next?</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../retail/common_gfdl1.2_i.html">License</a>
   </li>
 </ul>
   </li>
@@ -1374,8 +1392,8 @@
       <a href="autoyast-example.html">
         <i class="fas fa-arrow-right custom-color" data-tippy="Next Page" id="nextPage"></i></a></span>
     &nbsp;
-    <a href="https://github.com/uyuni-project/uyuni-docs/issues"><i class="fas fa-bug custom-color" data-tippy="Create an Issue" id="createIssue"></i>&nbsp;</a>
-  <a href="https://github.com/uyuni-project/uyuni-docs/edit/manager-4.0.4/modules/client-configuration/pages/tshoot-clients.adoc"><i class="fas fa-edit custom-color" data-tippy="Edit this page and submit a pull request" id="submitPR"></i></a>
+    <a href="https://github.com/SUSE/doc-susemanager/issues"><i class="fas fa-bug custom-color" data-tippy="Create an Issue" id="createIssue"></i>&nbsp;</a>
+  <a href="https://github.com/uyuni-project/uyuni-docs/edit/master/modules/client-configuration/pages/tshoot-clients.adoc"><i class="fas fa-edit custom-color" data-tippy="Edit this page and submit a pull request" id="submitPR"></i></a>
 </div>
 </div>
 <article class="doc"><a name="section-top"></a>
@@ -1533,6 +1551,56 @@ Therefore you must not mount <code class="filename">/tmp</code> with the <code c
 </div>
 </div>
 <div class="sect1">
+<h2 id="_passing_grains_to_a_start_event"><a class="anchor" href="#_passing_grains_to_a_start_event"></a><a class="link" href="#_passing_grains_to_a_start_event">Passing Grains to a Start Event</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Every time a Salt client starts, it passes the <code>machine_id</code> grain to SUSE Manager. SUSE Manager uses this grain to determine if the client is registered.
+This process requires a synchronous Salt call. Synchronous Salt calls block other processes, so if you have a lot of clients start at the same time, the process could create significant delays.</p>
+</div>
+<div class="paragraph">
+<p>To overcome this problem, a new feature has been introduced in Salt to avoid making a separate synchronous Salt call.</p>
+</div>
+<div class="paragraph">
+<p>To use this feature, you can add a configuration parameter to the client configuration, on clients that support it.</p>
+</div>
+<div class="paragraph">
+<p>To make this process easier, you can use the <code>mgr_start_event_grains.sls</code> helper Salt state.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>This only applies to already registered clients.
+If you registered your Salt client recently, this config parameter is added by default.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>On the SUSE Manager Server, at the command prompt, use this command to enable the <code>start_event_grains</code> configuration helper:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>salt '*' state.sls util.mgr_start_event_grains</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This command adds the required configuration into the client&#8217;s configuration file, and applies it when the client is restarted.
+If you have a large number of clients, you can execute the command in batch mode instead:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>salt --batch-size 50 '*' state.sls mgr_start_event_grains</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
 <h2 id="_ssl_errors"><a class="anchor" href="#_ssl_errors"></a><a class="link" href="#_ssl_errors">SSL errors</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
@@ -1563,6 +1631,24 @@ Open the <code class="path">/etc/apache2/ssl-global.conf</code> configuration fi
 <div class="paragraph">
 <p>This will need to be done manually on the server, and with a Salt state on the Proxy.
 Restart the <code class="systemitem">apache</code> service on each system after making the changes.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_adding_additional_fqdns_for_proxies"><a class="anchor" href="#_adding_additional_fqdns_for_proxies"></a><a class="link" href="#_adding_additional_fqdns_for_proxies">Adding Additional FQDNS for Proxies</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You have clients connecting through a SUSE Manager proxy. Although these clients may appear in the Web UI you are unable to see that they are connected through a proxy. If this is the case you could be using a FQDN to connect to the proxy that is unknown to SUSE Manager.
+To correct this behaviour, specify any additional FQDNS in your minion config on the proxy as grains.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>grains:
+  susemanager:
+    custom_fqdns:
+      - name.one
+      - name.two</pre>
+</div>
 </div>
 </div>
 </div>

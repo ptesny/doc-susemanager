@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Installing with the Unified Installer :: SUSE Manager Documentation</title>
+    <title>Install with the Unified Installer :: SUSE Manager Documentation</title>
     <link rel="canonical" href="https://opensource.suse.com/doc-susemanager/suse-manager/retail/retail-install-unified.html">
-    <meta name="generator" content="Antora 2.0.0">
+    <meta name="generator" content="Antora 2.2.0">
     <link rel="stylesheet" href="../../_/css/site.css">
    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" integrity="sha256-piqEf7Ap7CMps8krDQsSOTZgF+MU/0MPyPW2enj5I40=" crossorigin="anonymous" /> -->
 <link rel="stylesheet" href="../../_/css/search.css">
@@ -42,19 +42,19 @@
                   <div class="navbar-link">Resources</div>
                   <div class="navbar-dropdown">
                       <!--  <div class="navbar-item"><strong>Resources</strong></div> -->
-                      <a class="navbar-item" href="https://github.com/uyuni-project/uyuni-docs"><i
-                              class="fab fa-github"></i>&nbsp;Code Repository</a>
-                      <a class="navbar-item" href="https://github.com/uyuni-project/uyuni-docs/issues"><i
-                              class="fab fa-github"></i>&nbsp;Report an Issue</a>
+                      <a class="navbar-item" href="https://github.com/SUSE/doc-susemanager"><i
+                              class="fab fa-github"></i>&nbsp;doc-susemanager</a>
+                      <a class="navbar-item" href="https://github.com/SUSE/doc-susemanager/issues"><i
+                              class="fab fa-github"></i>&nbsp;Report Issue</a>
                       <a class="navbar-item"
-                         href="https://github.com/uyuni-project/uyuni-docs/wiki#contributing"><i
+                         href="https://github.com/SUSE/doc-susemanager/wiki#contributing"><i
                               class="fas fa-user-edit"></i>&nbsp;Contributing</a>
                   </div>
               </div>
 
           </div>
       </div>
-      <a id="twitter-link" class="navbar-item" href="https://twitter.com/susemanager?lang=en">
+      <a id="twitter-link" class="navbar-item" href="https://twitter.com/susemanager">
           <span class="icon">
             <svg aria-hidden="true" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg"
                  viewBox="0 0 512 512">
@@ -150,7 +150,13 @@
     <a class="nav-link" href="../installation/proxy-setup.html">Proxy Setup</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../installation/webui-setup.html">Web Interface Setup</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../installation/pubcloud-setup.html">Public Cloud Setup</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../installation/setup-wizard.html">Setup Wizard</a>
   </li>
 </ul>
   </li>
@@ -194,6 +200,9 @@
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../client-configuration/registration-bootstrap.html">Register with Bootstrap</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../client-configuration/registration-cli.html">Register on the Command Line</a>
   </li>
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../client-configuration/clients-and-activation-keys.html">Activation Keys</a>
@@ -249,6 +258,9 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../client-configuration/clients-ubuntu.html">Ubuntu Clients</a>
   </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../client-configuration/clients-opensuse.html">openSUSE Clients</a>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
@@ -291,7 +303,7 @@
     <a class="nav-link" href="../client-configuration/channels.html">Channels</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../client-configuration/creating-a-tools-repository.html">Creating a Tools Repository</a>
+    <a class="nav-link" href="../client-configuration/bootstrap-repository.html">Bootstrap Repository</a>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
@@ -365,45 +377,15 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../reference/intro.html">Reference Manual</a>
+    <span class="nav-text">Reference Guide</span>
 <ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../reference/intro.html">Introduction</a>
+  </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
     <span class="nav-text">WebUI Reference</span>
 <ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="../reference/navigation/navigation-menu.html">Navigation</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/navigation/top-bar.html">Top Bar</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/navigation/left-navigation-bar.html">Left Navigation Bar</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/navigation/categories-and-pages.html">Categories</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/navigation/tabs-subtabs.html">Tabs and Subtabs</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/navigation/patch-alert-icons.html">Patch Alert Icons</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/navigation/notification-messages-icon.html">Notification Messages Icon</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/navigation/navigation-search.html">Search</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/navigation/systems-selected.html">Systems Selected</a>
-  </li>
-  <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/navigation/navigation-lists.html">Navigation Lists</a>
-  </li>
-</ul>
-  </li>
   <li class="nav-item" data-depth="3">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../reference/home/home-menu.html">Home</a>
@@ -745,9 +727,6 @@
     <a class="nav-link" href="../reference/audit/audit-menu.html">Audit</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
-    <a class="nav-link" href="../reference/audit/system-details-audit.html">System Details Audit</a>
-  </li>
-  <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../reference/audit/audit-cve-audit.html">CVE Audit</a>
   </li>
   <li class="nav-item" data-depth="4">
@@ -815,6 +794,9 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../reference/schedule/pending-actions.html">Pending Actions</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../reference/schedule/recurring-actions.html">Recurring Actions</a>
   </li>
   <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../reference/schedule/completed-actions.html">Completed Actions</a>
@@ -1047,6 +1029,9 @@
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../administration/subscription-matching.html">Subscription Matching</a>
+  </li>
+  <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../administration/live-patching.html">Live Patching</a>
 <ul class="nav-list">
@@ -1065,10 +1050,22 @@
     <a class="nav-link" href="../administration/monitoring.html">Monitoring</a>
   </li>
   <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../administration/organizations.html">Organizations</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../administration/content-staging.html">Content Staging</a>
+  </li>
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../administration/disconnected-setup.html">Disconnected Setup</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../administration/iss.html">Inter-Server Synchronization</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../administration/task-schedules.html">Task Schedules</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../administration/recurring-actions.html">Recurring Actions</a>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
@@ -1083,13 +1080,28 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../administration/mirror-sources.html">Mirror Sources</a>
   </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../administration/openscap.html">OpenSCAP</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../administration/auditing.html">Auditing Packages</a>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../administration/auth-methods.html">Authentication Methods</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../administration/custom-ssl.html">Custom SSL Certificates</a>
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../administration/ssl-certs.html">SSL Certificates</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../administration/ssl-certs-selfsigned.html">Self-Signed SSL Certificates</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../administration/ssl-certs-imported.html">Imported SSL Certificates</a>
+  </li>
+</ul>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../administration/backup-restore.html">Backing Up and Restoring</a>
@@ -1159,6 +1171,9 @@
     <a class="nav-link" href="../administration/tshoot-saltboot.html">Troubleshooting Saltboot</a>
   </li>
   <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../administration/tshoot-sync.html">Troubleshooting Product Synchronization</a>
+  </li>
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../administration/tshoot-taskomatic.html">Troubleshooting Taskomatic</a>
   </li>
 </ul>
@@ -1190,6 +1205,9 @@
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../salt/salt-file-locations.html">File Locations</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../salt/yomi.html">Install Using Yomi</a>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
@@ -1316,13 +1334,13 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="retail-migration-slepostosuma.html">Migrate SLEPOS to SUMA</a>
   </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="retail-upgrade-branchserver.html">Upgrade Branch Server</a>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="retail-next.html">What Next?</a>
-  </li>
-  <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="common_gfdl1.2_i.html">License</a>
   </li>
 </ul>
   </li>
@@ -1375,16 +1393,16 @@
       <a href="retail-network-arch.html">
         <i class="fas fa-arrow-right custom-color" data-tippy="Next Page" id="nextPage"></i></a></span>
     &nbsp;
-    <a href="https://github.com/uyuni-project/uyuni-docs/issues"><i class="fas fa-bug custom-color" data-tippy="Create an Issue" id="createIssue"></i>&nbsp;</a>
-  <a href="https://github.com/uyuni-project/uyuni-docs/edit/manager-4.0.4/modules/retail/pages/retail-install-unified.adoc"><i class="fas fa-edit custom-color" data-tippy="Edit this page and submit a pull request" id="submitPR"></i></a>
+    <a href="https://github.com/SUSE/doc-susemanager/issues"><i class="fas fa-bug custom-color" data-tippy="Create an Issue" id="createIssue"></i>&nbsp;</a>
+  <a href="https://github.com/uyuni-project/uyuni-docs/edit/master/modules/retail/pages/retail-install-unified.adoc"><i class="fas fa-edit custom-color" data-tippy="Edit this page and submit a pull request" id="submitPR"></i></a>
 </div>
 </div>
 <article class="doc"><a name="section-top"></a>
-<h1 class="page">Installing with the Unified Installer</h1>
+<h1 class="page">Install with the Unified Installer</h1>
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>SUSE Manager for Retail 4.0 is a SUSE base product.
+<p>SUSE Manager for Retail is a SUSE base product.
 This section describes how to install SUSE Manager for Retail from SUSE Linux Enterprise Server installation media with the Unified Installer.</p>
 </div>
 <div class="paragraph">
@@ -1393,7 +1411,7 @@ This section describes how to install SUSE Manager for Retail from SUSE Linux En
 </div>
 </div>
 <div class="sect1">
-<h2 id="_installing_suse_manager_for_retail"><a class="anchor" href="#_installing_suse_manager_for_retail"></a><a class="link" href="#_installing_suse_manager_for_retail">Installing SUSE Manager for Retail</a></h2>
+<h2 id="_install_suse_manager_for_retail"><a class="anchor" href="#_install_suse_manager_for_retail"></a><a class="link" href="#_install_suse_manager_for_retail">Install SUSE Manager for Retail</a></h2>
 <div class="sectionbody">
 <div class="olist arabic">
 <div class="title">Procedure: Installing SUSE Manager for Retail Server from a DVD Image</div>
@@ -1449,7 +1467,7 @@ Review the settings and click <b class="button">Install</b>.</p>
 </ol>
 </div>
 <div class="olist arabic">
-<div class="title">Procedure: Run the Installation Script on the SUSE Manager Server</div>
+<div class="title">Procedure: Running the Installation Script on the SUSE Manager Server</div>
 <ol class="arabic">
 <li>
 <p>Use SSH to access the command prompt of the SUSE Manager Server.</p>
@@ -1464,7 +1482,7 @@ Review the settings and click <b class="button">Install</b>.</p>
 </li>
 <li>
 <p>Follow the prompts to set up your account.
-Ensure you take note of the passwords you set, you will need them later on.</p>
+Take note of the passwords you set, you will need them later on.</p>
 </li>
 </ol>
 </div>
@@ -1474,7 +1492,7 @@ Ensure you take note of the passwords you set, you will need them later on.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_installing_suse_manager_for_retail_branch_server"><a class="anchor" href="#_installing_suse_manager_for_retail_branch_server"></a><a class="link" href="#_installing_suse_manager_for_retail_branch_server">Installing SUSE Manager for Retail Branch Server</a></h2>
+<h2 id="_install_suse_manager_for_retail_branch_server"><a class="anchor" href="#_install_suse_manager_for_retail_branch_server"></a><a class="link" href="#_install_suse_manager_for_retail_branch_server">Install SUSE Manager for Retail Branch Server</a></h2>
 <div class="sectionbody">
 <div class="olist arabic">
 <div class="title">Procedure: Installing the Branch Server from a DVD Image</div>
@@ -1533,7 +1551,7 @@ Review the settings and click <b class="button">Install</b>.</p>
 <div class="title">Procedure: Configuring and Registering the Branch Server</div>
 <ol class="arabic">
 <li>
-<p>Create an activation key based on the <code class="systemitem">SLE-Product-SUSE-Manager-Retail-Branch-Server-4.0-Pool</code> base channel.
+<p>Create an activation key based on the <code class="systemitem">SLE-Product-SUSE-Manager-Retail-Branch-Server-4.1-Pool</code> base channel.
 For more information about activation keys, see <a href="../client-configuration/clients-and-activation-keys.html" class="page">client-configuration:clients-and-activation-keys.adoc</a>.</p>
 </li>
 <li>
@@ -1541,19 +1559,19 @@ For more information about activation keys, see <a href="../client-configuration
 <div class="ulist">
 <ul>
 <li>
-<p>SLE-Module-Basesystem15-SP1-Pool for x86_64 SMRBS 4.0</p>
+<p>SLE-Module-Basesystem15-SP2-Pool for x86_64 SMRBS 4.1</p>
 </li>
 <li>
-<p>SLE-Module-Basesystem15-SP1-Updates for x86_64 SMRBS 4.0</p>
+<p>SLE-Module-Basesystem15-SP2-Updates for x86_64 SMRBS 4.1</p>
 </li>
 <li>
-<p>SLE-Module-Server-Applications15-SP1-Pool for x86_64 SMRBS 4.0</p>
+<p>SLE-Module-Server-Applications15-SP2-Pool for x86_64 SMRBS 4.1</p>
 </li>
 <li>
-<p>SLE-Module-Server-Applications15-SP1-Updates for x86_64 SMRBS 4.0</p>
+<p>SLE-Module-Server-Applications15-SP2-Updates for x86_64 SMRBS 4.1</p>
 </li>
 <li>
-<p>SLE-Product-SUSE-Manager-Retail-Branch-Server-4.0-Updates for x86_64</p>
+<p>SLE-Product-SUSE-Manager-Retail-Branch-Server-4.1-Updates for x86_64</p>
 </li>
 </ul>
 </div>
@@ -1587,7 +1605,7 @@ The branch server must be configured as a Salt client.</p>
 <td class="content">
 <div class="paragraph">
 <p>Cobbler TFTP is not currently supported on SUSE Manager for Retail.
-Do not configure the <code>susemanager-tftpsync-recv</code> tool on a SUSE Manager for Retail branch server.</p>
+Do not configure the <code class="package">susemanager-tftpsync-recv</code> tool on a SUSE Manager for Retail Branch Server.</p>
 </div>
 </td>
 </tr>
@@ -1596,14 +1614,14 @@ Do not configure the <code>susemanager-tftpsync-recv</code> tool on a SUSE Manag
 </div>
 </div>
 <div class="sect1">
-<h2 id="_installing_suse_manager_build_host"><a class="anchor" href="#_installing_suse_manager_build_host"></a><a class="link" href="#_installing_suse_manager_build_host">Installing SUSE Manager Build Host</a></h2>
+<h2 id="_install_suse_manager_build_host"><a class="anchor" href="#_install_suse_manager_build_host"></a><a class="link" href="#_install_suse_manager_build_host">Install SUSE Manager Build Host</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Build hosts are regular SUSE Linux Enterprise Server installations registered to SUSE Manager as salt minions.
-For more information how to install and register salt minions to SUSE Manager see <a href="../client-configuration/registration-overview.html" class="page">client-configuration:registration-overview.adoc</a>.</p>
+<p>Build hosts are regular SUSE Linux Enterprise Server installations registered to SUSE Manager as Salt minions.
+For more information how to install and register salt minions to SUSE Manager, see <a href="../client-configuration/registration-overview.html" class="page">client-configuration:registration-overview.adoc</a>.</p>
 </div>
 <div class="paragraph">
-<p>For how to prepare build host from already registered salt minion, see <a href="../administration/image-management.html#at.images.kiwi.buildhost" class="page">administration:image-management.adoc#at.images.kiwi.buildhost</a>.</p>
+<p>For how to prepare a build host from an already registered Salt minion, see <a href="../administration/image-management.html#at.images.kiwi.buildhost" class="page">administration:image-management.adoc#at.images.kiwi.buildhost</a>.</p>
 </div>
 <div class="admonitionblock important">
 <table>
@@ -1613,7 +1631,7 @@ For more information how to install and register salt minions to SUSE Manager se
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Supported base OS versions of SUSE Manager for Retail build hosts:</p>
+<p>Supported base OS versions of SUSE Manager for Retail Build Hosts:</p>
 </div>
 <div class="ulist">
 <ul>
